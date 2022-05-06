@@ -1,0 +1,24 @@
+ /* Constants will be replaced at runtime */
+
+QSplitter::handle {
+    border: none;
+    border-top: 2px dotted /* QSplitter_border_color */;
+}
+
+QSplitter::handle:hover {
+    border: none;
+    border-top: 2px dotted /* QSplitter_hover_border_color */;
+}
+
+QSplitter::handle:pressed {
+    border: none;
+    border-top: 2px dotted /* QSplitter_pressed_border_color */;
+}
+
+QSplitter::handle:horizontal {
+    width: 1px;
+}
+
+QSplitter::handle:vertical {
+    height: 1px;
+}
