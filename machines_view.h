@@ -13,9 +13,15 @@ public:
 	MachinesView(QWidget* parent, QStringList const& machines);
 	~MachinesView();
 	
+	void getBases();
+	void getWks();
+	void getServers();
+	void getMisc();
+	
 	void setupLayout();
 
 private:
+	QStringList _machineList;
 
 	QStringList _bases;
 	QStringList _wks;

@@ -58,7 +58,7 @@ int main(int argc, char** argv)
 	setStyle(&app);
 
 	MissionStatus* ms = new MissionStatus();
-	ms->resize(1280, 720);
+	ms->resize(680, 460);
 	ms->show();
 
 	return app.exec();

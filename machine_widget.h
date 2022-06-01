@@ -3,23 +3,26 @@
 
 #include <QWidget>
 
-#include "widgets/cpuwidget.h"
-#include "widgets/ramwidget.h"
+//#include "machine_detailed_dialog.h"
 
 class MachineWidget: public QWidget
 {
+
+	static const QString RED_BACKGROUND;
+	static const QString YELLOW_BACKGROUND;
+	static const QString GREEN_BACKGROUND;
 
 public:
 	MachineWidget(QWidget* parent, QString name);
 	~MachineWidget();
 	
 	void setupLayout();
+	void createConnections();
 
 private:
 	QString _machineName;
-
-	CpuWidget* _cpu;
-	RamWidget* _ram;
+//	MachineDetailedDialog* _machineDD;
+	
 };
 
 #endif //MACHINE_WIDGET_H
